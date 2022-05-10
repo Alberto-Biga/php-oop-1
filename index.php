@@ -20,9 +20,14 @@
         //imposto funzione costo noleggio (noleggio base sara' 20, se film datato 15)
         public function setSconto ($annoProduzione){
             if($annoProduzione < 2017){
-                $this -> costo = 15
+                $this -> costo = 15;
             }
         }
+
+        //imposto funzione di stampa per sconto
+        public function getSconto(){
+            return $this -> sconto;
+        } 
     }
 
 ?>
